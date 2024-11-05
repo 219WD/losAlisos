@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HomeScreen from './pages/HomeScreen';
 import { Helmet } from 'react-helmet';
+
+const HomeScreen = lazy(() => import('./pages/HomeScreen'));
 
 function App() {
   return (
@@ -33,9 +34,11 @@ function App() {
           })}
         </script>
       </Helmet>
-      <Routes>
-        <Route path="/" element={<HomeScreen />} />
-      </Routes>
+      <Suspense fallback={<div>Cargando...</div>}>
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 }
