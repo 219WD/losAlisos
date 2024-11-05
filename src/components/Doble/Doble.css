@@ -54,7 +54,7 @@
 
 @media (max-width: 768px) {
     h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
       }
     .content {
         flex-direction: column;
@@ -65,7 +65,8 @@
 
     .txt.doble-1 p,
     .txt.doble-2 p {
-        width: 80vw;
+        margin-top: 1rem;
+        width: 90vw;
         color: #B2A1FF;
     }
     .container.doble img {

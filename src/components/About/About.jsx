@@ -13,7 +13,7 @@ const About = () => {
         gsap.fromTo(
             '.Hoja',
             {
-                scale: 0.8, // Empieza más pequeña (80% del tamaño original)
+                scale: 0.9, // Empieza más pequeña (80% del tamaño original)
             },
             {
                 scale: 1, // Llega al tamaño original
