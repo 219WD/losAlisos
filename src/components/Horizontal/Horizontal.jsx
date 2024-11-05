@@ -23,9 +23,13 @@ const Horizontal = () => {
             ease: "expo.out",
         });
 
+        // Ajustar el desplazamiento horizontal en función del tamaño de la pantalla
+        const xMove = window.innerWidth < 768 ? -120 : -80;  // Desplazamiento mayor en móvil
+
+
         // Crear el scroll horizontal para el contenedor
         gsap.to(imgContainerElem, {
-            xPercent: -30,
+            xPercent: xMove,
             scrollTrigger: {
                 trigger: imgContainerElem,
                 start: 'top bottom',
