@@ -1,10 +1,8 @@
 import React from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import NavBar from './components/NavBar/NavBar.jsx'
 import HomeScreen from './pages/homeScreen.jsx'
 import { Helmet } from 'react-helmet';
-import Preload from './components/Preload/Preload.jsx'
 
 function App() {
   return (
@@ -33,8 +31,6 @@ function App() {
           `}
         </script>
       </Helmet>
-      {/* <Preload /> */}
-      {/* <NavBar /> */}
       <Routes>
         <Route path="/" element={<HomeScreen />} />
       </Routes>
