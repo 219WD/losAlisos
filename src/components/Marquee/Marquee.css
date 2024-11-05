@@ -42,7 +42,7 @@
 
 @media only screen and (max-width: 768px) {
     .header__marq {
-        bottom: -6rem;
+        bottom: 0;
         left: 0;
     }
 }
