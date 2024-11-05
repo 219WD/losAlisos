@@ -54,4 +54,7 @@
     .txt.about p {
         width: 90vw;
     }
+    .txt.about h2 {
+        font-size: 3rem;
+    }
 }
