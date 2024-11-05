@@ -1,0 +1,143 @@
+.container-footer {
+    padding: 20px;
+    background-color: #1d1c21;
+    color: white;
+    text-align: center;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.footer-logo {
+    max-width: 150px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+
+.social .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Espacio entre los íconos */
+    margin-top: 1rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form .select-input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    font-family: "Open Sans", serif;
+    font-size: 1.5rem;
+}
+
+.contact-form .select-input {
+    /* Opcional: agrega estilos adicionales específicos para el select */
+    appearance: none; /* Elimina la apariencia predeterminada del select */
+    background-color: transparent;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#opcion option {
+    background: #000;
+}
+
+.contact-form button {
+    margin: 2rem 0;
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Open Sans", serif;
+}
+
+.social ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.social ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.social ul li a:hover {
+    text-decoration: none;
+    color: #B1FA63;
+}
+
+.footer-bottom .cane a {
+    color: #fff;
+}
+
+.footer-bottom .cane a:hover {
+    color: #B1FA63;
+}
+
+/* Estilos responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        padding: 1rem;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%; /* Asegura que ocupen todo el ancho en pantallas pequeñas */
+        margin: 1rem 0;
+    }
+
+    .contact-form form {
+        width: 100%; /* Asegura que el formulario sea de ancho completo */
+    }
+
+    .footer-logo {
+        max-width: 120px; /* Reduce el tamaño del logo en pantallas pequeñas */
+    }
+
+    .social {
+        margin-top: 1rem;
+        text-align: center; /* Centra los íconos en pantallas pequeñas */
+        margin-left: 0; /* Elimina el desplazamiento a la izquierda */
+    }
+
+    .icons {
+        justify-content: center; /* Centra los íconos dentro de la sección */
+    }
+
+    .footer-bottom {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra el contenido */
+    }
+}

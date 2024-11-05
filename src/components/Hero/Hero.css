@@ -1,0 +1,84 @@
+.container.hero {
+    position: relative;
+    background-color: #243837;
+    background-image: url(../../assets/bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.container.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(36, 56, 55, 0.7);
+    /* Cambia el último valor para ajustar la opacidad */
+    z-index: 1;
+}
+
+.container.hero>* {
+    position: relative;
+    z-index: 2;
+}
+
+
+.container.hero .txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 3rem;
+}
+
+.container.hero .txt p {
+    width: 40vw;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    padding: 1rem 0;
+}
+
+.container.hero svg {
+    position: absolute;
+    left: 70vw;
+}
+
+.space {
+    display: inline-block;
+    width: 20px;
+    /* Ajusta el ancho del espacio aquí */
+}
+
+@media (max-width: 768px) {
+    .container.hero {
+        height: auto;
+    }
+    .container.hero .txt {
+        padding-left: 1rem;
+        margin-top: 15rem;
+    }
+
+    .container.hero .txt p {
+        width: 80vw;
+    }
+
+    .container.hero svg {
+        position: absolute;
+        top: -20vh;
+        left: 0.5rem;
+        width: 400px;
+    }
+
+    .txt button {
+        margin: 2rem auto;
+        width: 100%;
+    }
+}

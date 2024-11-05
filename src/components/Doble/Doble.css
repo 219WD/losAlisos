@@ -1,0 +1,77 @@
+.container.doble {
+    background-color: #243837;
+    height: auto;
+    /* Cambiado a auto para que ajuste al contenido */
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente el texto y la imagen */
+    margin: 2rem 0;
+    /* Espaciado entre las secciones */
+}
+
+.txt {
+    padding: 2rem;
+}
+
+.txt.doble-1 p,
+.txt.doble-2 p {
+    width: 40vw;
+    color: #B2A1FF;
+}
+
+.container.doble img {
+    width: 40vw;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    max-height: 95vh;
+    z-index: 1;
+}
+
+.space {
+    display: inline-block;
+    width: 10px;
+    /* Ajusta el ancho del espacio aquí */
+}
+
+
+.container.doble svg {
+    position: absolute;
+    left: 80vw;
+    z-index: 0;
+    margin-top: 5rem;
+}
+
+.container.doble .mirrored {
+    position: absolute;
+    left: -20vw;
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2.5rem;
+      }
+    .content {
+        flex-direction: column;
+    }
+    #reversa {
+        flex-direction: column-reverse;
+    }
+
+    .txt.doble-1 p,
+    .txt.doble-2 p {
+        width: 80vw;
+        color: #B2A1FF;
+    }
+    .container.doble img {
+        width: 90vw;
+    }
+    .container.doble .mirrored {
+        left: -150vw;
+    }
+}

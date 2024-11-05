@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 7rem;
+  color: #B1FA63;
+  font-weight: 700;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  position: relative;
+}
+
+
+h2 {
+  font-size: 5rem;
+  color: #B1FA63;
+  font-weight: 700;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  position: relative;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+button {
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: #fff;
+  color: #000;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+button:hover {
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* Estilos responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+
+  h1,
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+}

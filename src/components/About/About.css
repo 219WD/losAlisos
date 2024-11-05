@@ -1,0 +1,56 @@
+.container.about {
+    position: relative;
+    background-color: #B2A1FF;
+    background-image: url("https://texturelabs.org/wp-content/uploads/Texturelabs_Grunge_311S.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.container.about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(178, 161, 255, 0.7); /* Cambia el último valor para ajustar la opacidad */
+    z-index: 1;
+}
+
+.container.about > * {
+    position: relative;
+    z-index: 2;
+}
+
+.txt.about h2 {
+    color: #243837;
+}
+
+.txt.about p {
+    padding: 1rem 0;
+}
+
+.space {
+    display: inline-block;
+    width: 20px; /* Ajusta el ancho del espacio aquí */
+}
+
+@media (max-width: 768px) {
+    .container.about {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .Hoja {
+        width: 400px;
+    }
+    .txt.about p {
+        width: 80vw;
+    }
+}

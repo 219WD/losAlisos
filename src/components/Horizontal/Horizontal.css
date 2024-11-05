@@ -1,0 +1,92 @@
+
+.container.horizontal {
+    position: relative;
+    background-color: #B2A1FF;
+    background-image: url("../../assets/14.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.container.horizontal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(178, 161, 255, 0.7); /* Cambia el último valor para ajustar la opacidad */
+    z-index: 1;
+}
+
+.container.horizontal > * {
+    position: relative;
+    z-index: 2;
+}
+
+.sticky {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    will-change: transform;
+}
+
+.sticky-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    will-change: transform;
+    z-index: 0;
+}
+
+h5 {
+    font-size: 12rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.moving-img-container {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center;     /* Centra las imágenes verticalmente */
+    z-index: 1;
+    gap: 10rem;                /* Ajusta el espacio entre imágenes */
+    width: 100%;             /* Haz que el contenedor ocupe el ancho completo */
+    margin-left: 6rem;
+}
+
+.moving-img {
+    width: 400px;            
+}
+
+@media (max-width: 768px) {
+    .container.horizontal {
+        height: 80vh;
+    }
+    h5 {
+        font-size: 3rem;
+    }
+    .moving-img-container {
+        gap: 4rem;
+        margin-left: 15rem;
+    }
+    .moving-img {
+        width: 300px;            
+    }
+}
