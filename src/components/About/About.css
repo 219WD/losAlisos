@@ -46,6 +46,7 @@
     .container.about {
         flex-direction: column-reverse;
         height: auto;
+        padding: 1rem;
     }
     .Hoja {
         width: 400px;
