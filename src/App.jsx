@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import Preload from './components/Preload/Preload';
 
 const HomeScreen = lazy(() => import('./pages/HomeScreen'));
 
@@ -34,7 +35,7 @@ function App() {
           })}
         </script>
       </Helmet>
-      <Suspense fallback={<div>Cargando...</div>}>
+      <Suspense fallback={<Preload />}>
         <Routes>
           <Route path="/" element={<HomeScreen />} />
         </Routes>
