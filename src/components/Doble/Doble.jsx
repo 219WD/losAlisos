@@ -123,7 +123,7 @@ const Doble = () => {
                 </svg>
                 <img src={aliso} alt="" />
                 <div className="txt doble-2">
-                    <h2>Porque <span className="space"></span> de <span className="space"></span> Alisos</h2>
+                    <h2>Porqué <span className="space"></span> de <span className="space"></span> Alisos</h2>
                     <p>Alisos Club, con base en Tucumán, Argentina, toma su nombre del árbol aliso, un símbolo arraigado en la región. Los alisos, presentes en los paisajes tucumanos, prosperan en suelos húmedos y fértiles, y se asocian simbióticamente con bacterias en sus raíces, fijando nitrógeno y enriqueciendo la tierra para otras plantas. Este espíritu de simbiosis y enriquecimiento se refleja en Alisos Club, donde buscamos nutrir y fortalecer la comunidad cannábica a través del cultivo en suelo vivo orgánico, promoviendo la innovación, la educación y el desarrollo sostenible del cannabis. Además, la resiliencia y adaptabilidad de los alisos refleja nuestros valores de perseverancia y adaptabilidad en el desarrollo de prácticas sostenibles e innovadoras en el ámbito cannábico.</p>
                 </div>
             </div>
