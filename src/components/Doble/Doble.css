@@ -1,7 +1,6 @@
 .container.doble {
     background-color: #243837;
     height: auto;
-    /* Cambiado a auto para que ajuste al contenido */
     position: relative;
     overflow: hidden;
 }
@@ -9,9 +8,7 @@
 .content {
     display: flex;
     align-items: center;
-    /* Alinea verticalmente el texto y la imagen */
     margin: 2rem 0;
-    /* Espaciado entre las secciones */
 }
 
 .txt {

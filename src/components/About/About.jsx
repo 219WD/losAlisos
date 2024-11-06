@@ -13,18 +13,18 @@ const About = () => {
         gsap.fromTo(
             '.Hoja',
             {
-                scale: 0.9, // Empieza más pequeña (80% del tamaño original)
+                scale: 0.9, 
             },
             {
-                scale: 1, // Llega al tamaño original
+                scale: 1, 
                 scrollTrigger: {
-                    trigger: '.container.about', // El contenedor de la imagen activa la animación
-                    start: 'top 80%', // Inicia la animación cuando el top del contenedor está al 80% del viewport
-                    end: 'bottom bottom', // Finaliza cuando el top del contenedor alcanza el 30%
-                    scrub: true, // La animación se vincula al scroll
+                    trigger: '.container.about', 
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: true, 
                 },
-                duration: 2, // Duración de la animación
-                ease: 'power2.out', // Suavizado de la animación
+                duration: 2, 
+                ease: 'power2.out', 
             }
         );
 
