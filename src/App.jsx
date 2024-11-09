@@ -11,6 +11,7 @@ function App() {
     <BrowserRouter>
       <Helmet>
         <title>Alisos Club - Asociación Civil | Cannabis Medicinal</title>
+        <link rel="icon" type="image/svg+xml" href="/src/assets/Logo.svg" />
         <meta
           name="description"
           content="Asociación Civil comprometida con el bienestar y la salud en la provincia de Tucumán, Argentina."
